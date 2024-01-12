@@ -355,4 +355,33 @@ const Customeredit =()=>{
 
                     <div>
 
-                            <p>L
+                            <p>Letter.pdf</p> 
+                            <ProgressBar className="mb-1" now={25} label={"25%"} />
+                            <Link to="#"><p>Download</p></Link>
+                        
+                    </div>
+
+                    <div className="d-flex justify-content-end mt-3">
+                                    <Button variant="btn btn-secondary mr-2">
+                                        Cancel
+                                    </Button>
+                                    <Button variant="btn btn-primary">
+                                        Add Customer
+                                    </Button>
+                                </div>
+
+
+                    </Card.Body>
+                </Card>
+
+                
+
+            </Col>
+
+        </Row>
+    </Container> 
+        </>
+    )
+}
+
+export default Customeredit;

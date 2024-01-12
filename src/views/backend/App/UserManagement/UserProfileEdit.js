@@ -287,4 +287,12 @@ const UserProfileEdit = () => {
                                     </Tab.Pane>
                                 </Tab.Content>
                             </div>
-                        
+                        </Col>
+                    </Row>
+                </Tab.Container>
+            </Container>
+        </>
+    )
+}
+
+export default UserProfileEdit
