@@ -7,6 +7,7 @@ import Dashbord from '../views/backend/Main/Dashbord'
 // Customer
 import Customer from '../views/backend/Main/Customer';
 import Customeradd from '../views/backend/Main/Customeradd';
+import Customeradd2 from '../views/backend/Main/Customeradd2';
 import Customerview from '../views/backend/Main/Cutomerview';
 import Customeredit from '../views/backend/Main/Customeredit';
 
@@ -185,6 +186,8 @@ const Layout1Route = () => {
                     {/*Customer*/}
                     <Route path="/manage-customer"   component={Customer}/>
                     <Route path="/customer-add"      component={Customeradd}/>
+                    <Route path="/customer-add"      component={Customeradd}/>
+                    <Route path="/customer-add-2"      component={Customeradd2}/>
                     <Route path="/customer-view"     component={Customerview}/>
                     <Route path="/customer-edit"     component={Customeredit}/>
 

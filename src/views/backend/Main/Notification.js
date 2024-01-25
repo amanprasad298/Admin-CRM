@@ -35,7 +35,7 @@ return (
                     <Col md="4">
                         <Card>
                             <div class="btn-group btn-group-toggle btn-group-edges"> 
-                                <a class="button btn button-icon bg-primary ml-auto" target="_blank" href="#">Delete</a>
+                                <a class="button btn button-icon bg-primary ml-auto" target="_blank" href="#">Archive</a>
                                 <a class="button btn button-icon bg-primary ml-auto" target="_blank" href="#">Favourite</a>
                                 <a class="button btn button-icon bg-primary ml-auto" target="_blank" href="#">Mark as Read</a>
                             </div>

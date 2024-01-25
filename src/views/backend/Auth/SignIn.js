@@ -1,4 +1,4 @@
-import React from 'react' 
+import React, { useState } from 'react' 
 import { Container,Col,Row,Button, Form } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import  Card from '../../../components/Card'
@@ -14,7 +14,13 @@ function mapStateToProps(state) {
    return {
        darkMode: getDarkMode(state)
    };
+
+   
+
+
 }
+
+
 
 
 
@@ -63,7 +69,7 @@ const SignIn = (props) => {
                               <Col lg="12">
                                  <Form.Group>
                                     <Form.Label className="text-secondary">Email</Form.Label>
-                                    <Form.Control  type="email" placeholder="Enter Email"/>
+                                    <Form.Control type="email" placeholder="Enter Email"/>
                                  </Form.Group>
                               </Col>
                               <Col lg="12" className="mt-2">

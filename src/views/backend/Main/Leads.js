@@ -150,18 +150,18 @@ const Leads = () =>{
                                                     <th scope="col">
                                                         Company Name
                                                     </th>
-                                                    <th scope="col">
+                                                    {/* <th scope="col">
                                                         Email
-                                                    </th>
-                                                    <th scope="col">
+                                                    </th> */}
+                                                    {/* <th scope="col">
                                                         Phone
-                                                    </th>
+                                                    </th> */}
                                                     <th scope="col"> 
-                                                        Product Interested
+                                                        Product
                                                     </th>
-                                                    <th scope="col"> 
+                                                    {/* <th scope="col"> 
                                                         Address
-                                                    </th>
+                                                    </th> */}
                                                     <th scope="col"> 
                                                         Assign to
                                                     </th>
@@ -171,7 +171,7 @@ const Leads = () =>{
                                                     <th scope="col"> 
                                                         Status
                                                     </th>
-                                                    <th scope="col"> 
+                                                    <th scope="col" className='text-right'> 
                                                         Action items
                                                     </th>
                                                 </tr>
@@ -198,13 +198,13 @@ const Leads = () =>{
                                                     </td> */}
                                                     <td>{item.leadname}</td>
                                                     <td>{item.companyname}</td>
-                                                    <td>{item.email}</td>
-                                                    <td>{item.phone}</td>
+                                                    {/* <td>{item.email}</td> */}
+                                                    {/* <td>{item.phone}</td> */}
                                                     <td>{item.product}</td>
-                                                    <td>{item.address}</td>
+                                                    {/* <td>{item.address}</td> */}
                                                     <td>{item.assignto}</td>
                                                     <td style={{ color: getSourceColor(item.source) }}>{item.source}</td>
-                                                    <td style={{ color: getStatusColor(item.status), padding: '10px'}}>{item.status}</td>
+                                                    <td style={{ color: getStatusColor(item.status) }}>{item.status}</td>
                                                                                                
                                                     <td >
                                                         <div className="d-flex justify-content-end align-items-center">
@@ -245,20 +245,9 @@ const Leads = () =>{
                                                                     </svg>
                                                                 </Link> 
                                                             </OverlayTrigger>
-                                                            <OverlayTrigger placement="top" overlay={<Tooltip>Add to Customer</Tooltip>} >
-                                                                <Link className="" to="#">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" className="text-secondary mx-2" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
-                                                                    </svg>
-                                                                </Link> 
-                                                            </OverlayTrigger>
-
-                                                            
-                                                            <OverlayTrigger placement="top" overlay={<Tooltip>Delete</Tooltip>} >
-                                                                <Link className="" to="#">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" className="text-secondary mx-2" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                                                    </svg>
+                                                            <OverlayTrigger placement="top" overlay={<Tooltip>Convert to Customer</Tooltip>} >
+                                                                <Link to="/customer-add" className="btn btn-secondary btn-sm d-flex align-items-center justify-content-center ml-3">
+                                                                    Convert
                                                                 </Link>
                                                             </OverlayTrigger>
                                                         </div>

@@ -450,7 +450,7 @@ const Dashbord = () => {
                 <Card>
                     <Card.Body>
                         <h4 className="font-weight-bold mb-3">Lead Status</h4>
-                        <Chart className="custom-chart" options={chart3.options} series={chart3.series} type="donut"   height="330"  />
+                        <Chart className="custom-chart mb-5" options={chart3.options} series={chart3.series} type="donut"   height="330"  />
                         <div className="d-flex justify-content-around align-items-center">
                         <div><svg width="24" height="24" viewBox="0 0 24 24" fill="#ffbb33" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="3" y="3" width="18" height="18" rx="2" fill="#ffbb33" />
@@ -465,8 +465,6 @@ const Dashbord = () => {
                                 
                                 <span>Walk In</span>
                         </div>
-                        </div>
-                        <div className="d-flex justify-content-around align-items-center mt-3">
                         <div>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="primary" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="3" y="3" width="18" height="18" rx="2" fill="#04237D" />
@@ -482,6 +480,7 @@ const Dashbord = () => {
                                 <span>Dead</span>
                         </div>
                         </div>
+                        
                     </Card.Body>
                 </Card>
             </Col>
@@ -490,9 +489,11 @@ const Dashbord = () => {
                 <Card>
                     <Card.Body>
                         <h4 className="font-weight-bold mb-3">Lead Sources</h4>
-                        <Chart className="custom-chart" options={chart4.options} series={chart4.series} type="donut"   height="330"  />
+                        <Chart className="custom-chart  mb-5" options={chart4.options} series={chart4.series} type="donut"   height="330"  />
                         <div className="d-flex justify-content-around align-items-center">
-                        <div><svg width="24" height="24" viewBox="0 0 24 24" fill="#ffbb33" xmlns="http://www.w3.org/2000/svg">
+                          
+                        <div>
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffbb33" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="3" y="3" width="18" height="18" rx="2" fill="#ffbb33" />
                                 </svg>
                                 
@@ -505,8 +506,7 @@ const Dashbord = () => {
                                 
                                 <span>Instagram</span>
                         </div>
-                        </div>
-                        <div className="d-flex justify-content-around align-items-center mt-3">
+
                         <div>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="primary" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="3" y="3" width="18" height="18" rx="2" fill="#04237D" />
@@ -521,7 +521,10 @@ const Dashbord = () => {
                                 
                                 <span>Website</span>
                         </div>
+
+
                         </div>
+                        
                     </Card.Body>
                 </Card>
             </Col>

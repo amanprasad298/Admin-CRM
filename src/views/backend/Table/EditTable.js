@@ -7,15 +7,14 @@ const EditTable = () => {
    const data =[{
     "id": 1,
     "Products": "Gio Metric",
-    "Quantity": "2",
-    "Price": "459",
-    "LineTotal": "999",
+    "Quantity": 2,
+    "Price": 459,
+    "LineTotal": 999,
   },
 
   ]
 
   
-
 
 
     const [Add, setAdd] = useState(data)

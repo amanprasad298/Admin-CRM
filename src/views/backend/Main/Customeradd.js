@@ -79,13 +79,9 @@ const Customeradd = () =>{
                                     <div className="col-md-6 mb-3">
                                         <Form.Label htmlFor="Text1" className="font-weight-bold text-muted text-uppercase">Branch Manager’s contact Number</Form.Label>
                                         <Form.Control  type="number" id="Text1" placeholder="+91 XXXXX XXXXX"/>
-                                    </div>
-                                    <div className="col-md-6 mb-3">
-                                        <Form.Label htmlFor="Text1" className="font-weight-bold text-muted text-uppercase">Street No./House No</Form.Label>
-                                        <Form.Control  type="text" id="Text1" placeholder="Enter Street No./House No"/>
-                                    </div>                                                                     
+                                    </div>                                                                  
 
-                                    <div className="col-md-6 mb-3">
+                                    {/* <div className="col-md-6 mb-3">
                                         <Form.Label htmlFor="inputcountry" className="font-weight-bold text-muted text-uppercase">State/ UT</Form.Label>
                                         <select defaultValue="" id="inputcountry" className="form-select form-control choicesjs" >
                                             <option value="" hidden disabled>Select State</option>
@@ -125,13 +121,10 @@ const Customeradd = () =>{
                                                                 <option value="Jammu and Kashmir">Jammu and Kashmir</option>
                                                                 <option value="Ladakh">Ladakh</option>
                                         </select>
-                                    </div>
+                                    </div> */}
 
                                     
-                                    <div className="col-md-6 mb-3">
-                                        <Form.Label htmlFor="Text1" className="font-weight-bold text-muted text-uppercase">City</Form.Label>
-                                        <Form.Control  type="text" id="Text1" placeholder="Enter City Name"/>
-                                    </div> 
+                                   
                                     <div className="col-md-6 mb-3">
                                         <Form.Label htmlFor="Text1" className="font-weight-bold text-muted text-uppercase">Branch Name</Form.Label>
                                         <Form.Control  type="text" id="Text1" placeholder="Enter Branch Name"/>
@@ -190,13 +183,17 @@ const Customeradd = () =>{
                                 <Col>
 
                                     <div className='d-flex flex-row align-items-center justify-content-between mb-4'>
-                                    <h6>SubTotal</h6>
-                                    <h6 className='text-secondary'>₹ 450</h6>
+                                    <h5>SubTotal</h5>
+                                    <h5 className='text-secondary'>₹ 450</h5>
                                     </div>
 
-                                    <div className='d-flex flex-row align-items-center justify-content-between'>
-                                    <h6>GST (18%)</h6>
-                                    <h6 className='text-secondary'>18%</h6>
+                                    <div className='d-flex flex-row align-items-center justify-content-between mb-4'>
+                                    <h6>IGST (9%)</h6>
+                                    <h6 className='text-secondary'>9%</h6>
+                                    </div>
+                                    <div className='d-flex flex-row align-items-center justify-content-between mb-2'>
+                                    <h6>SGST (9%)</h6>
+                                    <h6 className='text-secondary'>9%</h6>
                                     </div>
 
                                     <hr/>
@@ -211,16 +208,19 @@ const Customeradd = () =>{
                                
                                 
                             </Col>
+
+
                             
                         </Row>
+                           
                     </Card.Body>
-                </Card>   
+                </Card> 
 
-            </Col>
+                </Col>
 
-            <Col lg="12" className="mb-3 d-flex justify-content-between">
+                <Col lg="12" className="mb-3 d-flex justify-content-between">
                 <h4 className="font-weight-bold0 d-flex align-items-center">Payment Details</h4>
-            </Col>
+                </Col>
 
             <Col md="12">
             <Card>
@@ -230,31 +230,12 @@ const Customeradd = () =>{
                                 <Form className="row g-3 date-icon-set-modal">
 
                                     
-                                    <div className="col-md-6 mb-3">
-                                        <Form.Label htmlFor="Text1" className="font-weight-bold text-muted text-uppercase">Bank Name</Form.Label>
-                                        <Form.Control  type="text" id="Text1" placeholder="Enter Bank Name"/>
-                                    </div>
-                                    <div className="col-md-6 mb-3">
-                                        <Form.Label htmlFor="Text1" className="font-weight-bold text-muted text-uppercase">Branch Information</Form.Label>
-                                        <Form.Control  type="text" id="Text1" placeholder="Enter Branch Information"/>
-                                    </div>
                                     
-                                    <div className="col-md-6 mb-3">
-                                        <Form.Label htmlFor="Text1" className="font-weight-bold text-muted text-uppercase">Account Holder name</Form.Label>
-                                        <Form.Control  type="text" id="Text1" placeholder="Enter Account Holder name"/>
-                                    </div>
-                                    <div className="col-md-6 mb-3">
-                                        <Form.Label htmlFor="Text1" className="font-weight-bold text-muted text-uppercase">National/International Bank Account Number</Form.Label>
-                                        <Form.Control  type="number" id="Text1" placeholder="Enter Account Number"/>
-                                    </div>
+
+                                   
 
                                     <div className="col-md-6 mb-3">
-                                        <Form.Label htmlFor="Text1" className="font-weight-bold text-muted text-uppercase">Swift Code</Form.Label>
-                                        <Form.Control  type="text" id="Text1" placeholder="Enter Swift Code"/>
-                                    </div>
-
-                                    <div className="col-md-6 mb-3">
-                                        <Form.Label htmlFor="Text1" className="font-weight-bold text-muted text-uppercase">Advanced Payment</Form.Label>
+                                        <Form.Label htmlFor="Text1" className="font-weight-bold text-muted text-uppercase">Security Deposit</Form.Label>
                                         <InputGroup>
                                             <InputGroup.Prepend>
                                             <InputGroup.Text>INR</InputGroup.Text>
@@ -310,77 +291,31 @@ const Customeradd = () =>{
                             </Col>
                         </Row>
                     </Card.Body>
-                </Card>  
-
-                
-            <Col lg="12" className="mb-3 d-flex justify-content-between">
-                <h4 className="font-weight-bold0 d-flex align-items-center">Legal Documents Details</h4>
-            </Col>
+                </Card>    
 
                 <Card>
                     <Card.Body>
-                    <Form validated className='mb-3'>
-                                    <p>IOC</p>
-                                    <Form.File custom>
-                                        <Form.File.Input   id="validatedCustomFile" required /> 
-                                        <Form.File.Label htmlFor="validatedCustomFile">Choose file...</Form.File.Label>
-                                        <Form.Control.Feedback type="invalid">Example invalid custom file feedback</Form.Control.Feedback>
-                                    </Form.File>
-                                </Form>
 
-
-                    <Form validated className='mb-3'>
-                                    <p>PAN</p>
-                                    <Form.File custom>
-                                        <Form.File.Input   id="validatedCustomFile" required /> 
-                                        <Form.File.Label htmlFor="validatedCustomFile">Choose file...</Form.File.Label>
-                                        <Form.Control.Feedback type="invalid">Example invalid custom file feedback</Form.Control.Feedback>
-                                    </Form.File>
-                                </Form>
-
-
-                    <Form validated className='mb-3'>
-                                    <p>Agreement</p>
-                                    <Form.File custom>
-                                        <Form.File.Input   id="validatedCustomFile" required /> 
-                                        <Form.File.Label htmlFor="validatedCustomFile">Choose file...</Form.File.Label>
-                                        <Form.Control.Feedback type="invalid">Example invalid custom file feedback</Form.Control.Feedback>
-                                    </Form.File>
-                                </Form>
-
-                    <Form validated className='mb-3'>
-                                    <p>Person KYC</p>
-                                    <Form.File custom>
-                                        <Form.File.Input   id="validatedCustomFile" required /> 
-                                        <Form.File.Label htmlFor="validatedCustomFile">Choose file...</Form.File.Label>
-                                        <Form.Control.Feedback type="invalid">Example invalid custom file feedback</Form.Control.Feedback>
-                                    </Form.File>
-                                </Form>
-
-                    <div>
-
-                            <p>Letter.pdf</p> 
-                            <ProgressBar className="mb-1" now={25} label={"25%"} />
-                            <Link to="#"><p>Download</p></Link>
-                        
-                    </div>
-
-                    <div className="d-flex justify-content-end mt-3">
-                                    <Button variant="btn btn-secondary mr-2">
+                    <div className="d-flex justify-content-end">
+                                    <Link to="/manage-customer"><Button variant="btn btn-secondary mr-2">
                                         Cancel
-                                    </Button>
-                                    <Button variant="btn btn-primary">
-                                        Add Customer
-                                    </Button>
+                                    </Button></Link>
+                                    <Link to="/manage-customer"><Button variant="btn btn-dark mr-2">
+                                        Add to Customer
+                                    </Button></Link>
+                                    <Link to="/customer-add-2"><Button variant="btn btn-primary">
+                                        Next
+                                    </Button></Link>
                                 </div>
 
 
                     </Card.Body>
                 </Card>
 
-                
-
             </Col>
+
+
+           
 
         </Row>
     </Container> 
